@@ -11,7 +11,7 @@ import UpdateUser from "./UpdateUser";
 import AdminFeedback from "../ContactUs/AdminFeedback";
 import AgencyVerificationList from "./AgencyVerificationList";
 import CustomerVerificationList from "./CustomerVerificationList";
-import AgencyList from "./AgencyList";
+// import AgencyList from "./AgencyList";
 import AdminAgencyCars from "./AdminAgencyCars";
 
 const AdminDashboard = () => {
@@ -67,9 +67,9 @@ const AdminDashboard = () => {
             <Link to="/admin/customer-verification-list">Customer Verifications</Link>
           </li>
         </ul>
-        {/* <button className="logout-btn" onClick={handleLogout}>
+        <button className="logout-btn" onClick={handleLogout}>
           LOG OUT
-        </button> */}
+        </button>
       </div>
 
       {/* Main Content */}
@@ -85,7 +85,7 @@ const AdminDashboard = () => {
             <Route path="/customer-verification-list" element={<CustomerVerificationList />} />
             <Route path="/update-user/:userId" element={<UpdateUser />} />
 
-            <Route path="/agencyList" element={<AgencyList/>}/>
+            {/* <Route path="/agencyList" element={<AgencyList/>}/> */}
             <Route path="/agency/cars/:id" element={<AdminAgencyCars/>}/>
           </Routes>
         </div>
@@ -105,7 +105,7 @@ const AdminDashboard = () => {
           padding: 20px;
           display: flex;
           flex-direction: column;
-          // justify-content: space-between;
+          justify-content: space-between;
           border-right: 3px solid #f0c040;
         }
 

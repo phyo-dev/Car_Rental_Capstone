@@ -63,7 +63,7 @@ const AdminAgencyCars = () => {
 
     return (
         <div className="agency-container my-4">
-            <h1 className="agency-mb-4 text-center">Agency Cars</h1>
+            <h1 className="agency-mb-4 text-center">My Cars</h1>
             {error && <p className="agency-text-danger text-center">{error}</p>}
     
             {cars.length === 0 && !error ? (
